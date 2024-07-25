@@ -167,6 +167,7 @@ body > img {
 .container span {
   color: black;
   font-size: 2em;
+  letter-spacing: 3px;
 }
 
 .container > div {
