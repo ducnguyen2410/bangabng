@@ -169,7 +169,7 @@ body > img {
   font-size: 2em;
 }
 
-.container div {
+.container > div {
   margin: 0 5vw;
   padding: 50px;
   border-radius: 20px;
@@ -183,4 +183,38 @@ body > img {
 
 .container img {
   height: 300px;
+}
+
+.slider {
+  padding: 20px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(180px * 6);
+  gap: 30px;
+  animation: scroll 10s linear infinite;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 200px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  } 100% {
+    transform: translateX(calc(-180px * 6));
+  }
 }
