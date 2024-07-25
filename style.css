@@ -72,7 +72,7 @@ body > * {
 }
 
 .ca span {
-  color: #E49AB0;
+  color: #e49ab0;
 }
 
 .socials {
@@ -193,6 +193,10 @@ body > img {
   display: grid;
   place-items: center;
   overflow: hidden;
+  background-image: url("./bg222.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .slide-track {
@@ -212,13 +216,13 @@ body > img {
 }
 
 .hello {
-  
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
-  } 100% {
+  }
+  100% {
     transform: translateX(calc(-180px * 6));
   }
 }
